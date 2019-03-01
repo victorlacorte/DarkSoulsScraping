@@ -1,0 +1,21 @@
+Trying to figure out the overall structure of wiki tables of weapon classes:
+	- Image (ignore)
+	- Name: td > span > a.text
+	- Physical AR / DR: span.text, span.text
+	- Magical AR / DR: span.text, span.text
+	- Fire AR / DR: same
+	- Lightning AR / DR: same
+	- Critical bonus / ?: same
+	- Aux effects: ?
+	- Requirements: some sick tail text;  need to try (strenght, scaling,
+	  scaling @ +15)
+	- Requirements: same but regarding dex
+	- Requirements: int
+	- Requirements: faith
+	- Durability, weight
+	- Attack type(s)
+	- Acquired from
+
+HTML parsing algo:
+	* We are searching for table @class="wiki_table"
+	* table rows (tr) with data (td) must be parsed
